@@ -43,7 +43,7 @@ namespace NetworkSpeedAPI.Controllers
                 var station = _service.GetBestNetworkStation(device);
 
                 stations.Result.Add(
-                    _service.GetBestNetworkStation(device).Speed != 0 
+                    station.Speed != 0 
                     ? "Best network station for point " + device.x + "," + device.y + " is "
                     + station.Point.x + "," + station.Point.y + " with speed " + station.Speed.ToString("n2")
                     : "No link station within reach for point " + device.x + "," + device.y
