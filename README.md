@@ -1,9 +1,25 @@
-## NordCloud Tech assignment - Network speed
+## Tech assignment - Network speed
 
 `.NET 6.0 Web API (C#)`
 
 `Visual Studio 2022`
 
+------
+
+#### **Description**
+
+Write a program that solves the most suitable (with highest non-zero speed) network station
+for a device at a given point (x, y).
+
+This problem can be solved in 2-dimensional space. Network stations have reach and speed
+that depends on the distance to the station.
+
+A network station’s speed can be calculated as follows:
+
+```
+speed = (reach - device's distance from network station) ^ 2
+if distance > reach, speed = 0 
+```
 ------
 
 #### **How to run the solution** (Local Computer)
